@@ -1,0 +1,231 @@
+.primary {
+    .primary__container {
+        display: flex;
+        max-width: 78.542vw;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10vw;
+
+        .primary__decoration {
+            background-image: url(../../img/decore.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 47vw;
+            height: 60.596vw;
+            position: absolute;
+            z-index: -2;
+            top: 0;
+            right: 0;
+        }
+        .primary__moving-plane-container {
+            overflow: hidden;
+
+            .primary__moving-plane-start {
+                width: 12vw;
+                height: 9vw;
+                position: absolute;
+                top: 11vw;
+                right: 37vw;
+            
+                &:hover .primary__moving-plane {
+                    animation: fly 3s;
+                }
+                @keyframes fly {
+                    0% {
+                        top: 0;
+                        left: 0;
+                    }
+                    100% { 
+                        top: -20vw;
+                        left: 50vw;
+                    }
+                }
+                .primary__moving-plane {
+                    background-image: url(../../img/plane.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    z-index: -1;
+                }
+            }
+        }
+        .primary__plane {
+            background-image: url(../../img/plane.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 12vw;
+            height: 9vw;
+            position: absolute;
+            z-index: -1;
+            top: 16vw;
+            right: 2.8vw;
+        }
+        .primary__information {
+            margin-top: 7.431vw;
+
+            .primary__subtitle {
+                color: #DF6951;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 1.389vw;
+                line-height: 2.083vw;
+                margin-bottom: 1.667vw;
+            }
+            .primary__title {
+                width: 41vw;
+                color: #181E4B;
+                font-family: 'Volkhov', sans-serif;
+                font-weight: 700;
+                font-size: 5.833vw;
+                line-height: 6.181vw;
+                margin-bottom: 2.083vw;
+            }
+            .primary__text {
+                line-height: 2.083vw;
+                width: 33.125vw;
+                margin-bottom: 2.361vw;
+            }
+            .primary__buttons {
+                display: flex;
+                align-items: center;
+
+                .primary__btn {
+                    width: 11.806vw;
+                    height: 4.167vw;
+                    background: #F1A501;
+                    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+                    border-radius: 0.694vw;
+                    font-family: 'GoogleSans', sans-serif;
+                    font-weight: 500;
+                    font-size: 1.25vw;
+                    color: #FFFFFF;
+                    margin-right: 3.056vw;
+                }
+                .primary__round-btn-container {
+                    display: flex;
+                    align-items: center;
+
+                    .primary__round-btn {
+                        width: 3.5vw;
+                        height: 3.5vw;
+                        background-color: #DF6951;
+                        box-shadow: 0px 20px 35px rgba(223, 105, 81, 0.15);
+                        border-radius: 50%;
+                        position: relative;
+                        margin-right: 1.2vw;
+
+                        .primary__round-btn-triangle {
+                            width: 0;
+                            height: 0;
+                            border-top: 0.5vw solid transparent;
+                            border-bottom: 0.5vw solid transparent;
+                            border-left: 0.8vw solid #FFFFFF; 
+                            position: absolute;
+                            top: 50%;
+                            left: 55%;
+                            transform: translate(-50%, -50%);
+                        }
+                    }
+                }
+            }
+        }
+        .primary__image {
+            width: 53.125vw;
+            margin-left: -10vw;
+        }
+    }
+}
+
+@media (max-width: $max-width) {
+    .primary {
+        .primary__container {
+            margin-bottom: 26.57vw;
+
+            .primary__pluses {
+                background-image: url(../../img/primary-pluses.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 40.097vw;  
+                width: 20vw; 
+                position: absolute; 
+                overflow: hidden;
+                transform: translate(69vw, 89vw);
+            }
+            .primary__decoration {
+                display: none;
+            }
+            .primary__moving-plane-container {
+                .primary__moving-plane-start {
+                    width: 40vw;
+                    height: 40vw;
+                    left: -6vw;
+                    top: 8vw;
+
+                    @keyframes fly {
+                        0% {
+                            top: 0;
+                            left: 0;
+                        }
+                        100% { 
+                            top: -26vw;
+                            left: 20vw;
+                        }
+                    }
+                }
+            }
+            .primary__plane {
+                display: none;
+            }
+            .primary__information {
+                margin-top: 17.874vw;
+
+                .primary__subtitle {
+                    display: none;
+                }
+                .primary__title {
+                    width: 81.401vw;
+                    font-size: 11.594vw;
+                    line-height: 21.498vw;
+                    margin-bottom: 11.594vw;
+                }
+                .primary__text {
+                    display: none;
+                }
+                .primary__buttons {
+                    flex-direction: column;
+
+                    .primary__btn {
+                        width: 41.063vw;
+                        height: 14.493vw;
+                        border-radius: 2.415vw;
+                        font-size: 4.348vw;
+                        margin-right: 0;
+                        margin-bottom: 9.662vw;
+                    }
+                    .primary__round-btn-container {
+                        .primary__round-btn {
+                            width: 12.5vw;
+                            height: 12.5vw;
+                            margin-right: 5vw;
+
+                            .primary__round-btn-triangle {
+                                border-top: 1.5vw solid transparent;
+                                border-bottom: 1.5vw solid transparent;
+                                border-left: 2.5vw solid #FFFFFF; 
+                            }
+                        }
+                        .primary__round-btn-text {
+                            font-size: 3.865vw;
+                            line-height: 7.246vw;
+                        }
+                    }
+                }
+            }
+            .primary__image {
+                display: none;
+            }
+        }
+    }
+}

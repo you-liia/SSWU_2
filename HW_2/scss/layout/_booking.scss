@@ -1,0 +1,281 @@
+.booking {
+    .booking__container {
+        @include container;
+        margin-bottom: 13.889vw;
+
+        .booking__steps {    
+            width: 35.486vw;
+            margin-left: 0.903vw;
+            margin-right: 8.194vw;
+
+            .booking__subtitle {
+                @include subtitle;
+                margin-bottom: 1.042vw;
+            }
+            .booking__title {
+                @include title;
+                margin-bottom: 2.153vw;
+            }
+            .booking__step {
+                display: flex;
+                
+                &:not(:last-child) {
+                    margin-bottom: 3.333vw;
+                }
+                
+                .booking__step-image {
+                    width: 3.264vw;
+                }
+                .booking__step-information {
+                    margin-left: 1.458vw;
+                    line-height: 1.383vw;
+                    width: 22.708vw;
+
+                    .booking__step-title {
+                        font-weight: 700;
+                    }
+                    .booking__step-text {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        .booking__card {
+            width: 25.694vw;
+            height: 27.778vw;
+            box-shadow: $box-shadow;
+            border-radius: 1.806vw;
+            margin-top: 5.417vw;
+            background-color: #FFFFFF;
+
+            .booking__blur{ 
+                position: absolute;
+                z-index: -1;
+                width: 20vw;
+                height: 21vw;
+                background: #59B1E6;
+                opacity: 0.4;
+                filter: blur(5.208vw);
+                transform: translate(6vw, -1vw);
+            }
+            .booking__card-image {
+                width: 22.292vw;
+                border: 1px solid #000000;
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); 
+                border-radius: 1.667vw;
+                margin: 1.389vw 1.667vw 1.667vw 1.736vw;  
+            }
+            .booking__card-information {
+                color: #84829A;
+                line-height: 1.383vw;
+                margin-left: 1.736vw;
+
+                .booking__card-title {
+                    font-size: 1.25vw;
+                    line-height: 1.556vw;
+                    color: #080809;
+                    margin-bottom: 0.903vw;
+                }
+                .booking__card-date {
+                    margin-bottom: 1.458vw;
+                }
+                .booking__card-icons {
+                    margin-bottom: 2.083vw;
+
+                    .booking__card-icon {
+                        width: 2.5vw;
+                        margin-right: 1.042vw;
+                    }
+                }
+                .booking__card-footer {
+                    display: flex;
+
+                    .booking__card-building-icon {
+                        width: 1.111vw;
+                        height: 1.111vw;
+                        margin-right: 1.042vw;
+                    }
+                    .booking__card-people {
+                        margin-right: 9.931vw;
+                    }
+                    .booking__card-heart-icon {
+                        width: 1.389vw;
+                        height: 1.29vw;
+                    }
+                }
+            }
+            .booking__ongoing-card {
+                display: flex;
+                align-items: flex-start;
+                width: 18.264vw;
+                height: 8.958vw;
+                background-color: #FFFFFF;
+                box-shadow: $box-shadow;
+                border-radius: 1.25vw;
+                color: #080809;
+                font-size: 0.972vw;
+                line-height: 1.21vw;
+                transform: translate(15.1vw, -10.5vw);
+                
+                .booking__ongoing-icon {
+                    width: 3.472vw;
+                    margin-top: 1.25vw;
+                    margin-left: 1.25vw;
+                }
+                .booking__ongoing-information {
+                    margin-top: 1.111vw;
+                    margin-left: 0.833vw;
+
+                    .booking__ongoing-subtitle {
+                        color: #84829A;
+                        font-size: 0.972vw;
+                        margin-bottom: 0.417vw;  
+                    }
+                    .booking__ongoing-title {
+                        font-size: 1.25vw;
+                        line-height: 1.556vw;
+                        margin-bottom: 0.972vw;
+                    }
+                    .booking__ongoing-text {
+                        margin-bottom: 0.694vw;  
+                    }
+                    .booking__ongoing-percent {
+                        color: #8A79DF;
+                    }
+                    .booking__progress-bar {
+                        width: 10.833vw;
+                        height: 0.347vw;
+                        background-color: #F5F5F5;
+                        border-radius: 2.083vw;
+
+                        .booking__progress {
+                            height: 100%;
+                            width: 5.069vw;
+                            background-color: #8A79DF;
+                            border-radius: 2.083vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $max-width){
+    .booking {
+        .booking__container {
+            flex-direction: column;
+            align-items: center;
+            max-width: 100%;
+            margin-bottom: 0;
+
+            .booking__pluses-container{
+                height: 40.097vw; 
+                width: 36.957vw; 
+                overflow: hidden;
+                transform: translate(-30vw, 5vw);
+            }
+            .booking__pluses{
+                background-image: url(../../img/destinations-booking-pluses.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                margin-top: -5vw; 
+                height: 40.097vw;
+                width: 100%;
+            }
+            .booking__steps {    
+                width: 95.411vw;
+                margin-left: 1.932vw;
+                margin-right: 2.657vw;
+    
+                .booking__subtitle {
+                    display: none;
+                }
+                .booking__title {
+                    @include title-mobile;
+                    margin-bottom: 17.874vw;
+                    text-align: center;
+                }
+                .booking__step {
+                    &:not(:last-child) {
+                        margin-bottom: 11.594vw;
+                    }
+                    .booking__step-image {
+                        width: 11.353vw;
+                    }
+                    .booking__step-information {
+                        font-size: 3.865vw;
+                        margin-left: 5.072vw;
+                        line-height: 4.812vw;
+                        width: 100%;
+                    }
+                }
+            }
+            .booking__card {
+                width: 72.908vw;
+                height: 85.174vw;
+                border-radius: 6.28vw;
+                margin: 23.522vw 17.913vw 20.773vw 9.179vw;
+    
+                .booking__blur{ 
+                    width: 50vw;
+                    height: 59vw;
+                    filter: blur(18vw);
+                    transform: translate(25vw, -1vw);
+                }
+                .booking__card-image {
+                    width: 63.254vw;
+                    border-radius: 5.797vw;
+                    margin: 4.258vw 4.729vw 5.57vw 4.925vw;
+                }
+                .booking__card-information {
+                    line-height: 4.812vw;
+                    margin-left: 4.925vw;
+                    font-size: 3.865vw;
+    
+                    .booking__card-title {
+                        font-size: 4.348vw;
+                        line-height: 5.413vw;
+                        margin-bottom: 2.899vw;
+                    }
+                    .booking__card-date {
+                        margin-bottom: 5.5vw;
+                    }
+                    .booking__card-icons {
+                        margin-bottom: 5.5vw;
+    
+                        .booking__card-icon {
+                            width: 7.094vw;
+                            margin-right: 2.415vw;
+                        }
+                    }
+                    .booking__card-footer {
+                        .booking__card-building-icon {
+                            width: 3.152vw;
+                            height: 3.406vw;
+                            margin-right: 3.031vw;
+                        }
+                        .booking__card-people {
+                            margin-right: 21.5vw;
+                        }
+                        .booking__card-heart-icon {
+                            width: 3.942vw;
+                            height: 3.957vw;
+                        }
+                    }
+                }
+                .booking__ongoing-card {
+                    display: none;
+                }
+                .booking__card-pluses{
+                    background-image: url(../../img/booking-pluses-bottom.svg);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    width: 36.957vw;
+                    height: 40.097vw;
+                    transform: translate(54vw, -16vw);
+                }
+            }
+        }
+    }
+}

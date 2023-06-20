@@ -1,0 +1,152 @@
+.services {
+    .services__container {
+        .services__pluses {
+            background-image: url(../../img/services-pluses.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 11.528vw;
+            width: 10.625vw;   
+            position: absolute; 
+            transform: translate(84vw, -0.5vw);
+        }
+        .services__subtitle {
+            @include subtitle;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 0.694vw;
+        }
+        .services__title {
+            @include title;
+            text-align: center;
+            margin-bottom: 4.59vw;
+        }
+        .services__cards {
+            display: flex;
+            justify-content: space-between;
+            max-width: 81.25vw;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10.833vw;
+
+            .services__card {
+                background-color: #FFFFFF;
+                text-align: center;
+                width: 18.542vw;
+                height: 21.806vw;
+                border-radius: 2.5vw;
+            
+                &:hover{
+                    box-shadow: $box-shadow;
+            
+                    .services__card-decoration {
+                        width: 6.944vw;
+                        height: 6.944vw;
+                        background-color: #DF6951;
+                        border-radius: 2.083vw 0 0.694vw;
+                        position: absolute;
+                        z-index: -1;
+                        transform: translate(-2.3vw, 17vw);
+                    }
+                }
+                .services__image {
+                    margin-top: 2.91vw;
+                    margin-bottom: 2.083vw;
+                }
+                .services__image_weather{
+                    width: 6.389vw;
+                }
+                .services__image_flights {
+                    width: 7.778vw;
+                }
+                .services__image_events {
+                    width: 4.653vw;
+                }
+                .services__image_customization {
+                    width: 5.347vw;
+                }
+                .services__information {
+                    .services__card-title {
+                        color: #1E1D4C;
+                        font-weight: 600;
+                        font-size: 1.389vw;
+                        line-height: 1.892vw;
+                        margin-bottom: 1.042vw;
+                    }
+                    .services__card-text {
+                        width: 12.569vw;
+                        margin: 0 auto;
+                        line-height: 1.806vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: $max-width){
+    .services {
+        .services__container {
+            .services__pluses {
+                display: none;
+            }
+            .services__subtitle {
+                @include subtitle-mobile;
+                margin-bottom: 5.727vw;
+            }
+            .services__title {
+                @include title-mobile;
+                margin-bottom: 11.353vw;
+            }
+            .services__cards {
+                flex-direction: column;
+                max-width: 100%;
+                align-items: center;
+                margin-bottom: 43.324vw;
+
+                .services__card {
+                    width: 65.807vw;
+                    height: 76.58vw;
+                    border-radius: 8.696vw;
+                    margin-bottom: 12vw;
+                
+                    &:hover{
+                        box-shadow: $box-shadow;
+                
+                        .services__card-decoration {
+                            width: 24.155vw;
+                            height: 24.155vw;
+                            border-radius: 7.246vw 0 2.415vw;
+                            transform: translate(-8vw, 60vw);
+                        }
+                    }
+                    .services__image {
+                        margin-top: 9vw;
+                        margin-bottom: 7vw;
+                    }
+                    .services__image_weather{
+                        width: 22.674vw;
+                    }
+                    .services__image_flights {
+                        width: 30vw;
+                    }
+                    .services__information {
+                        .services__card-title {
+                            font-size: 4.831vw;
+                            line-height: 6.58vw;
+                            margin-bottom: 3.659vw;
+                        }
+                        .services__card-text {
+                            width: 12.569vw;
+                            width: 44.609vw;
+                            font-size: 3.865vw;
+                            line-height: 6.28vw;
+                        }
+                    }
+                }
+                .services__card_hidden{
+                    display: none;
+                }
+            }
+        }
+    }
+}

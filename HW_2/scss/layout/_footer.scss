@@ -1,0 +1,151 @@
+.footer {
+    .footer__container {
+        @include container;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+    .footer__summary {
+        width: 14.375vw;
+
+        .footer__summary-logo {
+            font-size: 3.056vw;
+            color: #181E4B;
+            margin-bottom: 1.319vw;
+            line-height: 4.583vw;
+        }
+        .footer__summary-text {
+            font-size: 0.903vw;
+            line-height: 1.124vw;
+            color: #5E6282;
+        }
+    }
+    .footer__menu {
+        display: flex;
+        justify-content: space-between;
+        width: 32.917vw;
+
+        .footer__menu-list {
+            .footer__menu-item {
+                .footer__menu-title {
+                    font-weight: 700; 
+                    font-size: 1.458vw;
+                    color: #080809;
+                    display: block;
+                    margin-bottom: 2.361vw;
+                }
+                .footer__menu-link {
+                    font-size: 1.25vw;
+                    color: #5E6282;
+                    display: block;
+                    margin-bottom: 0.903vw;
+                }
+            }
+        }  
+    }
+    .footer__icons {
+        .footer__social-media {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2.431vw; 
+
+            .footer__social-media-item {
+                width: 1.667vw;
+                margin-right: 1.389vw;
+            } 
+        }
+        .footer__app-text {
+            font-size: 1.389vw;
+            margin-bottom: 1.111vw;
+            color: #5E6282;
+        }
+        .footer__app-stores {
+            .footer__app-stores-item {
+                height: 2.431vw;
+            }
+            .footer__app-stores-item_google-play {
+                margin-right: 0.486vw;
+            }
+        }
+    }
+    .footer__rights {
+        font-size: 0.972vw;
+        text-align: center;
+        margin-top: 4.931vw;
+        padding-bottom: 1.875vw;
+        color: #5E6282;
+    }
+}
+
+@media (max-width: $max-width){
+    .footer {
+        background-color: #FFF1DA;
+
+        .footer__container {
+            flex-direction: column; 
+            max-width: 62.319vw;
+        }
+        .footer__summary {
+            width: 50vw;
+
+            .footer__summary-logo {
+                font-size: 10.628vw;
+                margin-top: 3.14vw;
+                margin-bottom: 4.589vw;
+                line-height: 15.942vw;
+            }
+            .footer__summary-text {
+                font-size: 3.14vw;
+                line-height: 3.911vw;
+                margin-bottom: 14.01vw;
+            }
+        }
+        .footer__menu {
+            flex-direction: column; 
+
+            .footer__menu-list {
+                margin-bottom: 10.87vw;
+
+                .footer__menu-item {
+                    .footer__menu-title {
+                        font-size: 5.072vw;
+                        margin-bottom: 8.213vw;
+                    }
+                    .footer__menu-link {
+                        font-size: 4.348vw;
+                        margin-bottom: 3.14vw;
+                    }
+                }
+            }
+        }
+        .footer__icons {
+            align-self: center;
+
+            .footer__social-media {
+                width: 37.681vw;
+                margin: 0 auto 9.903vw;
+
+                .footer__social-media-item {
+                    width: 5.797vw;
+                    margin: 0 2.415vw;
+                }
+            }
+            .footer__app-text {
+                font-size: 4.831vw;
+                margin-bottom: 3.865vw;
+            }
+            .footer__app-stores {
+                .footer__app-stores-item {
+                    height: 8.454vw;
+                }
+                .footer__app-stores-item_google-play {
+                    margin-right: 1.691vw;
+                }
+            }
+        }
+        .footer__rights {
+            font-size: 3.382vw;
+            margin-top: 14.01vw;
+            padding-bottom: 6.522vw;
+        }
+    }
+}

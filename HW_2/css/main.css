@@ -1,0 +1,1360 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1.111vw;
+  height: 100%;
+  line-height: 1;
+  color: #5E6282;
+  margin: 0;
+}
+
+.header,
+.main,
+.footer {
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: GoogleSans;
+  src: url(../fonts/GoogleSans-Medium.ttf);
+}
+.link, .header .header__container .header__links .header__auth .header__auth-link, .header .header__container .header__links .header__menu .header__list .header__item .header__link {
+  font-family: "GoogleSans", sans-serif;
+  font-weight: 400;
+  font-size: 1.181vw;
+  line-height: 1.501vw;
+  color: #212832;
+  margin-right: 2.917vw;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.link:hover, .header .header__container .header__links .header__auth .header__auth-link:hover, .header .header__container .header__links .header__menu .header__list .header__item .header__link:hover {
+  color: #F1A501;
+  transform: scale(1.1);
+}
+
+.header .header__container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 78.542vw;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3.264vw;
+  padding-bottom: 1.597vw;
+}
+.header .header__container .header__logo-link {
+  margin-right: 15.417vw;
+}
+.header .header__container .header__logo-link .header__logo {
+  width: 7.98vw;
+}
+.header .header__container .header__links {
+  display: flex;
+  align-items: center;
+}
+.header .header__container .header__links .header__menu .header__list {
+  display: flex;
+}
+.header .header__container .header__links .header__auth {
+  font-weight: 500;
+}
+.header .header__container .header__links .header__auth .header__auth-link_sign-up {
+  border: 1px solid #212832;
+  border-radius: 0.347vw;
+  padding: 0.625vw 1.458vw;
+}
+.header .header__container .header__links .header__select {
+  background-color: #FFF1DA;
+  border: none;
+  font-family: "GoogleSans", sans-serif;
+  font-weight: 500;
+  font-size: 1.181vw;
+  line-height: 1.501vw;
+  color: #212832;
+}
+.header .header__burger_hidden {
+  display: none;
+}
+
+@media (max-width: 767.99px) {
+  .header {
+    background-color: #FFF1DA;
+  }
+  .header .header__container .header__logo-link .header__logo {
+    width: 27.756vw;
+  }
+  .header .header__container .header__links .header__menu .header__list {
+    display: none;
+  }
+  .header .header__container .header__links .header__auth {
+    display: none;
+  }
+  .header .header__container .header__links .header__select {
+    font-size: 4.106vw;
+    line-height: 5.222vw;
+    align-self: flex-end;
+    margin-right: 5.193vw;
+  }
+  .header .header__burger_hidden {
+    display: block;
+  }
+  .header .header__burger_hidden .header__burger-checkbox {
+    display: none;
+  }
+  .header .header__burger_hidden .header__burger-checkbox:checked ~ .header__burger-menu {
+    display: block;
+    position: static;
+    text-align: center;
+  }
+  .header .header__burger_hidden .header__burger-label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    transform: translate(87vw, -6vw);
+  }
+  .header .header__burger_hidden .header__burger-label .header__burger_icon {
+    width: 5.797vw;
+  }
+  .header .header__burger_hidden .header__burger-menu {
+    display: none;
+    width: 100%;
+  }
+  .header .header__burger_hidden .header__burger-menu .header__burger-list {
+    padding: 22.464vw 0;
+  }
+  .header .header__burger_hidden .header__burger-menu .header__burger-list .header__burger-item:not(:last-child) {
+    margin-bottom: 7.246vw;
+  }
+  .header .header__burger_hidden .header__burger-menu .header__burger-list .header__burger-item .header__burger-link {
+    color: #737373;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 7.246vw;
+    line-height: 10.87vw;
+  }
+}
+.primary .primary__container {
+  display: flex;
+  max-width: 78.542vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vw;
+}
+.primary .primary__container .primary__decoration {
+  background-image: url(../../img/decore.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 47vw;
+  height: 60.596vw;
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  right: 0;
+}
+.primary .primary__container .primary__moving-plane-container {
+  overflow: hidden;
+}
+.primary .primary__container .primary__moving-plane-container .primary__moving-plane-start {
+  width: 12vw;
+  height: 9vw;
+  position: absolute;
+  top: 11vw;
+  right: 37vw;
+}
+.primary .primary__container .primary__moving-plane-container .primary__moving-plane-start:hover .primary__moving-plane {
+  animation: fly 3s;
+}
+@keyframes fly {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  100% {
+    top: -20vw;
+    left: 50vw;
+  }
+}
+.primary .primary__container .primary__moving-plane-container .primary__moving-plane-start .primary__moving-plane {
+  background-image: url(../../img/plane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.primary .primary__container .primary__plane {
+  background-image: url(../../img/plane.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 12vw;
+  height: 9vw;
+  position: absolute;
+  z-index: -1;
+  top: 16vw;
+  right: 2.8vw;
+}
+.primary .primary__container .primary__information {
+  margin-top: 7.431vw;
+}
+.primary .primary__container .primary__information .primary__subtitle {
+  color: #DF6951;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.389vw;
+  line-height: 2.083vw;
+  margin-bottom: 1.667vw;
+}
+.primary .primary__container .primary__information .primary__title {
+  width: 41vw;
+  color: #181E4B;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 700;
+  font-size: 5.833vw;
+  line-height: 6.181vw;
+  margin-bottom: 2.083vw;
+}
+.primary .primary__container .primary__information .primary__text {
+  line-height: 2.083vw;
+  width: 33.125vw;
+  margin-bottom: 2.361vw;
+}
+.primary .primary__container .primary__information .primary__buttons {
+  display: flex;
+  align-items: center;
+}
+.primary .primary__container .primary__information .primary__buttons .primary__btn {
+  width: 11.806vw;
+  height: 4.167vw;
+  background: #F1A501;
+  box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+  border-radius: 0.694vw;
+  font-family: "GoogleSans", sans-serif;
+  font-weight: 500;
+  font-size: 1.25vw;
+  color: #FFFFFF;
+  margin-right: 3.056vw;
+}
+.primary .primary__container .primary__information .primary__buttons .primary__round-btn-container {
+  display: flex;
+  align-items: center;
+}
+.primary .primary__container .primary__information .primary__buttons .primary__round-btn-container .primary__round-btn {
+  width: 3.5vw;
+  height: 3.5vw;
+  background-color: #DF6951;
+  box-shadow: 0px 20px 35px rgba(223, 105, 81, 0.15);
+  border-radius: 50%;
+  position: relative;
+  margin-right: 1.2vw;
+}
+.primary .primary__container .primary__information .primary__buttons .primary__round-btn-container .primary__round-btn .primary__round-btn-triangle {
+  width: 0;
+  height: 0;
+  border-top: 0.5vw solid transparent;
+  border-bottom: 0.5vw solid transparent;
+  border-left: 0.8vw solid #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+.primary .primary__container .primary__image {
+  width: 53.125vw;
+  margin-left: -10vw;
+}
+
+@media (max-width: 767.99px) {
+  .primary .primary__container {
+    margin-bottom: 26.57vw;
+  }
+  .primary .primary__container .primary__pluses {
+    background-image: url(../../img/primary-pluses.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40.097vw;
+    width: 20vw;
+    position: absolute;
+    overflow: hidden;
+    transform: translate(69vw, 89vw);
+  }
+  .primary .primary__container .primary__decoration {
+    display: none;
+  }
+  .primary .primary__container .primary__moving-plane-container .primary__moving-plane-start {
+    width: 40vw;
+    height: 40vw;
+    left: -6vw;
+    top: 8vw;
+  }
+  @keyframes fly {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    100% {
+      top: -26vw;
+      left: 20vw;
+    }
+  }
+  .primary .primary__container .primary__plane {
+    display: none;
+  }
+  .primary .primary__container .primary__information {
+    margin-top: 17.874vw;
+  }
+  .primary .primary__container .primary__information .primary__subtitle {
+    display: none;
+  }
+  .primary .primary__container .primary__information .primary__title {
+    width: 81.401vw;
+    font-size: 11.594vw;
+    line-height: 21.498vw;
+    margin-bottom: 11.594vw;
+  }
+  .primary .primary__container .primary__information .primary__text {
+    display: none;
+  }
+  .primary .primary__container .primary__information .primary__buttons {
+    flex-direction: column;
+  }
+  .primary .primary__container .primary__information .primary__buttons .primary__btn {
+    width: 41.063vw;
+    height: 14.493vw;
+    border-radius: 2.415vw;
+    font-size: 4.348vw;
+    margin-right: 0;
+    margin-bottom: 9.662vw;
+  }
+  .primary .primary__container .primary__information .primary__buttons .primary__round-btn-container .primary__round-btn {
+    width: 12.5vw;
+    height: 12.5vw;
+    margin-right: 5vw;
+  }
+  .primary .primary__container .primary__information .primary__buttons .primary__round-btn-container .primary__round-btn .primary__round-btn-triangle {
+    border-top: 1.5vw solid transparent;
+    border-bottom: 1.5vw solid transparent;
+    border-left: 2.5vw solid #FFFFFF;
+  }
+  .primary .primary__container .primary__information .primary__buttons .primary__round-btn-container .primary__round-btn-text {
+    font-size: 3.865vw;
+    line-height: 7.246vw;
+  }
+  .primary .primary__container .primary__image {
+    display: none;
+  }
+}
+.services .services__container .services__pluses {
+  background-image: url(../../img/services-pluses.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 11.528vw;
+  width: 10.625vw;
+  position: absolute;
+  transform: translate(84vw, -0.5vw);
+}
+.services .services__container .services__subtitle {
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.694vw;
+}
+.services .services__container .services__title {
+  color: #14183E;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 700;
+  font-size: 3.472vw;
+  line-height: 4.479vw;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 4.59vw;
+}
+.services .services__container .services__cards {
+  display: flex;
+  justify-content: space-between;
+  max-width: 81.25vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10.833vw;
+}
+.services .services__container .services__cards .services__card {
+  background-color: #FFFFFF;
+  text-align: center;
+  width: 18.542vw;
+  height: 21.806vw;
+  border-radius: 2.5vw;
+}
+.services .services__container .services__cards .services__card:hover {
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.services .services__container .services__cards .services__card:hover .services__card-decoration {
+  width: 6.944vw;
+  height: 6.944vw;
+  background-color: #DF6951;
+  border-radius: 2.083vw 0 0.694vw;
+  position: absolute;
+  z-index: -1;
+  transform: translate(-2.3vw, 17vw);
+}
+.services .services__container .services__cards .services__card .services__image {
+  margin-top: 2.91vw;
+  margin-bottom: 2.083vw;
+}
+.services .services__container .services__cards .services__card .services__image_weather {
+  width: 6.389vw;
+}
+.services .services__container .services__cards .services__card .services__image_flights {
+  width: 7.778vw;
+}
+.services .services__container .services__cards .services__card .services__image_events {
+  width: 4.653vw;
+}
+.services .services__container .services__cards .services__card .services__image_customization {
+  width: 5.347vw;
+}
+.services .services__container .services__cards .services__card .services__information .services__card-title {
+  color: #1E1D4C;
+  font-weight: 600;
+  font-size: 1.389vw;
+  line-height: 1.892vw;
+  margin-bottom: 1.042vw;
+}
+.services .services__container .services__cards .services__card .services__information .services__card-text {
+  width: 12.569vw;
+  margin: 0 auto;
+  line-height: 1.806vw;
+}
+
+@media (max-width: 767.99px) {
+  .services .services__container .services__pluses {
+    display: none;
+  }
+  .services .services__container .services__subtitle {
+    font-size: 4.831vw;
+    line-height: 7.246vw;
+    margin-bottom: 5.727vw;
+  }
+  .services .services__container .services__title {
+    font-size: 9.662vw;
+    line-height: 12.464vw;
+    margin-bottom: 11.353vw;
+  }
+  .services .services__container .services__cards {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+    margin-bottom: 43.324vw;
+  }
+  .services .services__container .services__cards .services__card {
+    width: 65.807vw;
+    height: 76.58vw;
+    border-radius: 8.696vw;
+    margin-bottom: 12vw;
+  }
+  .services .services__container .services__cards .services__card:hover {
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  }
+  .services .services__container .services__cards .services__card:hover .services__card-decoration {
+    width: 24.155vw;
+    height: 24.155vw;
+    border-radius: 7.246vw 0 2.415vw;
+    transform: translate(-8vw, 60vw);
+  }
+  .services .services__container .services__cards .services__card .services__image {
+    margin-top: 9vw;
+    margin-bottom: 7vw;
+  }
+  .services .services__container .services__cards .services__card .services__image_weather {
+    width: 22.674vw;
+  }
+  .services .services__container .services__cards .services__card .services__image_flights {
+    width: 30vw;
+  }
+  .services .services__container .services__cards .services__card .services__information .services__card-title {
+    font-size: 4.831vw;
+    line-height: 6.58vw;
+    margin-bottom: 3.659vw;
+  }
+  .services .services__container .services__cards .services__card .services__information .services__card-text {
+    width: 12.569vw;
+    width: 44.609vw;
+    font-size: 3.865vw;
+    line-height: 6.28vw;
+  }
+  .services .services__container .services__cards .services__card_hidden {
+    display: none;
+  }
+}
+.destinations .destinations__container .destinations__subtitle {
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  margin-bottom: 0.556vw;
+  text-align: center;
+}
+.destinations .destinations__container .destinations__title {
+  color: #14183E;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 700;
+  font-size: 3.472vw;
+  line-height: 4.479vw;
+  text-transform: capitalize;
+  margin-bottom: 4.167vw;
+  text-align: center;
+}
+.destinations .destinations__container .destinations__cards {
+  display: flex;
+  max-width: 76.389vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12.917vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__card {
+  width: 21.875vw;
+  height: 31.736vw;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.667vw;
+  margin-right: 3.507vw;
+  position: relative;
+  transition: transform 0.5s;
+}
+.destinations .destinations__container .destinations__cards .destinations__card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.05), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.04), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.04), 0px 20px 13px rgba(0, 0, 0, 0.04), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.01), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.667vw;
+  display: block;
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container {
+  position: absolute;
+  background-color: #FFFFFF;
+  bottom: 0;
+  width: 21.875vw;
+  height: 9.028vw;
+  border-radius: 0px 0px 1.6vw 1.6vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information {
+  margin-top: 1.875vw;
+  margin-left: 1.389vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__country-price {
+  display: flex;
+  justify-content: space-between;
+  width: 18.75vw;
+  font-size: 1.25vw;
+  line-height: 1.556vw;
+  margin-bottom: 1.319vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__duration {
+  display: flex;
+  font-size: 1.111vw;
+  line-height: 1.383vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__duration .destinations__icon {
+  width: 1.389vw;
+  margin-right: 0.903vw;
+}
+.destinations .destinations__container .destinations__cards .destinations__spiral {
+  background-image: url(../../img/destination-spiral.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 6.667vw;
+  height: 17.5vw;
+  transform: translate(70.2vw, 11vw);
+  position: absolute;
+  z-index: -1;
+}
+
+@media (max-width: 767.99px) {
+  .destinations .destinations__container .destinations__pluses {
+    background-image: url(../../img/destinations-booking-pluses.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 39.85vw;
+    width: 24.517vw;
+    position: absolute;
+    transform: translate(-1.35vw, -0.7vw);
+  }
+  .destinations .destinations__container .destinations__subtitle {
+    font-size: 4.831vw;
+    line-height: 7.246vw;
+    width: 26.075vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .destinations .destinations__container .destinations__title {
+    font-size: 9.662vw;
+    line-height: 12.464vw;
+    margin-bottom: 9.362vw;
+    width: 67.285vw;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .destinations .destinations__container .destinations__cards {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card {
+    width: 73.85vw;
+    height: 109.71vw;
+    border-radius: 5.797vw;
+    margin-right: 0;
+    margin-bottom: 17.524vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.05), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.04), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.04), 0px 20px 13px rgba(0, 0, 0, 0.04), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.01), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.01);
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__image {
+    border-radius: 5.797vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container {
+    width: 73.85vw;
+    height: 31.208vw;
+    border-radius: 0px 0px 5.7vw 5.7vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information {
+    margin-top: 6.481vw;
+    margin-left: 4.688vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__country-price {
+    width: 63.123vw;
+    font-size: 4.348vw;
+    line-height: 5.413vw;
+    margin-bottom: 5vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__duration {
+    font-size: 3.865vw;
+    line-height: 4.812vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__card .destinations__information-container .destinations__information .destinations__duration .destinations__icon {
+    width: 4.688vw;
+    margin-right: 3.106vw;
+  }
+  .destinations .destinations__container .destinations__cards .destinations__spiral {
+    display: none;
+  }
+}
+.booking .booking__container {
+  display: flex;
+  max-width: 76.389vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 13.889vw;
+}
+.booking .booking__container .booking__steps {
+  width: 35.486vw;
+  margin-left: 0.903vw;
+  margin-right: 8.194vw;
+}
+.booking .booking__container .booking__steps .booking__subtitle {
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  margin-bottom: 1.042vw;
+}
+.booking .booking__container .booking__steps .booking__title {
+  color: #14183E;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 700;
+  font-size: 3.472vw;
+  line-height: 4.479vw;
+  text-transform: capitalize;
+  margin-bottom: 2.153vw;
+}
+.booking .booking__container .booking__steps .booking__step {
+  display: flex;
+}
+.booking .booking__container .booking__steps .booking__step:not(:last-child) {
+  margin-bottom: 3.333vw;
+}
+.booking .booking__container .booking__steps .booking__step .booking__step-image {
+  width: 3.264vw;
+}
+.booking .booking__container .booking__steps .booking__step .booking__step-information {
+  margin-left: 1.458vw;
+  line-height: 1.383vw;
+  width: 22.708vw;
+}
+.booking .booking__container .booking__steps .booking__step .booking__step-information .booking__step-title {
+  font-weight: 700;
+}
+.booking .booking__container .booking__steps .booking__step .booking__step-information .booking__step-text {
+  font-weight: 400;
+}
+.booking .booking__container .booking__card {
+  width: 25.694vw;
+  height: 27.778vw;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.806vw;
+  margin-top: 5.417vw;
+  background-color: #FFFFFF;
+}
+.booking .booking__container .booking__card .booking__blur {
+  position: absolute;
+  z-index: -1;
+  width: 20vw;
+  height: 21vw;
+  background: #59B1E6;
+  opacity: 0.4;
+  filter: blur(5.208vw);
+  transform: translate(6vw, -1vw);
+}
+.booking .booking__container .booking__card .booking__card-image {
+  width: 22.292vw;
+  border: 1px solid #000000;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 1.667vw;
+  margin: 1.389vw 1.667vw 1.667vw 1.736vw;
+}
+.booking .booking__container .booking__card .booking__card-information {
+  color: #84829A;
+  line-height: 1.383vw;
+  margin-left: 1.736vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-title {
+  font-size: 1.25vw;
+  line-height: 1.556vw;
+  color: #080809;
+  margin-bottom: 0.903vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-date {
+  margin-bottom: 1.458vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-icons {
+  margin-bottom: 2.083vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-icons .booking__card-icon {
+  width: 2.5vw;
+  margin-right: 1.042vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-footer {
+  display: flex;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-building-icon {
+  width: 1.111vw;
+  height: 1.111vw;
+  margin-right: 1.042vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-people {
+  margin-right: 9.931vw;
+}
+.booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-heart-icon {
+  width: 1.389vw;
+  height: 1.29vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card {
+  display: flex;
+  align-items: flex-start;
+  width: 18.264vw;
+  height: 8.958vw;
+  background-color: #FFFFFF;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.25vw;
+  color: #080809;
+  font-size: 0.972vw;
+  line-height: 1.21vw;
+  transform: translate(15.1vw, -10.5vw);
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-icon {
+  width: 3.472vw;
+  margin-top: 1.25vw;
+  margin-left: 1.25vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information {
+  margin-top: 1.111vw;
+  margin-left: 0.833vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__ongoing-subtitle {
+  color: #84829A;
+  font-size: 0.972vw;
+  margin-bottom: 0.417vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__ongoing-title {
+  font-size: 1.25vw;
+  line-height: 1.556vw;
+  margin-bottom: 0.972vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__ongoing-text {
+  margin-bottom: 0.694vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__ongoing-percent {
+  color: #8A79DF;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__progress-bar {
+  width: 10.833vw;
+  height: 0.347vw;
+  background-color: #F5F5F5;
+  border-radius: 2.083vw;
+}
+.booking .booking__container .booking__card .booking__ongoing-card .booking__ongoing-information .booking__progress-bar .booking__progress {
+  height: 100%;
+  width: 5.069vw;
+  background-color: #8A79DF;
+  border-radius: 2.083vw;
+}
+
+@media (max-width: 767.99px) {
+  .booking .booking__container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 0;
+  }
+  .booking .booking__container .booking__pluses-container {
+    height: 40.097vw;
+    width: 36.957vw;
+    overflow: hidden;
+    transform: translate(-30vw, 5vw);
+  }
+  .booking .booking__container .booking__pluses {
+    background-image: url(../../img/destinations-booking-pluses.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -5vw;
+    height: 40.097vw;
+    width: 100%;
+  }
+  .booking .booking__container .booking__steps {
+    width: 95.411vw;
+    margin-left: 1.932vw;
+    margin-right: 2.657vw;
+  }
+  .booking .booking__container .booking__steps .booking__subtitle {
+    display: none;
+  }
+  .booking .booking__container .booking__steps .booking__title {
+    font-size: 9.662vw;
+    line-height: 12.464vw;
+    margin-bottom: 17.874vw;
+    text-align: center;
+  }
+  .booking .booking__container .booking__steps .booking__step:not(:last-child) {
+    margin-bottom: 11.594vw;
+  }
+  .booking .booking__container .booking__steps .booking__step .booking__step-image {
+    width: 11.353vw;
+  }
+  .booking .booking__container .booking__steps .booking__step .booking__step-information {
+    font-size: 3.865vw;
+    margin-left: 5.072vw;
+    line-height: 4.812vw;
+    width: 100%;
+  }
+  .booking .booking__container .booking__card {
+    width: 72.908vw;
+    height: 85.174vw;
+    border-radius: 6.28vw;
+    margin: 23.522vw 17.913vw 20.773vw 9.179vw;
+  }
+  .booking .booking__container .booking__card .booking__blur {
+    width: 50vw;
+    height: 59vw;
+    filter: blur(18vw);
+    transform: translate(25vw, -1vw);
+  }
+  .booking .booking__container .booking__card .booking__card-image {
+    width: 63.254vw;
+    border-radius: 5.797vw;
+    margin: 4.258vw 4.729vw 5.57vw 4.925vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information {
+    line-height: 4.812vw;
+    margin-left: 4.925vw;
+    font-size: 3.865vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-title {
+    font-size: 4.348vw;
+    line-height: 5.413vw;
+    margin-bottom: 2.899vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-date {
+    margin-bottom: 5.5vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-icons {
+    margin-bottom: 5.5vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-icons .booking__card-icon {
+    width: 7.094vw;
+    margin-right: 2.415vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-building-icon {
+    width: 3.152vw;
+    height: 3.406vw;
+    margin-right: 3.031vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-people {
+    margin-right: 21.5vw;
+  }
+  .booking .booking__container .booking__card .booking__card-information .booking__card-footer .booking__card-heart-icon {
+    width: 3.942vw;
+    height: 3.957vw;
+  }
+  .booking .booking__container .booking__card .booking__ongoing-card {
+    display: none;
+  }
+  .booking .booking__container .booking__card .booking__card-pluses {
+    background-image: url(../../img/booking-pluses-bottom.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36.957vw;
+    height: 40.097vw;
+    transform: translate(54vw, -16vw);
+  }
+}
+.testimonials .testimonials__container {
+  display: flex;
+  max-width: 76.389vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12.014vw;
+}
+.testimonials .testimonials__container .testimonials__title-container {
+  width: 28.403vw;
+  margin-left: 0.903vw;
+  margin-right: 8.611vw;
+}
+.testimonials .testimonials__container .testimonials__title-container .testimonials__subtitle {
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  margin-bottom: 0.556vw;
+}
+.testimonials .testimonials__container .testimonials__title-container .testimonials__title {
+  color: #14183E;
+  font-family: "Volkhov", sans-serif;
+  font-weight: 700;
+  font-size: 3.472vw;
+  line-height: 4.479vw;
+  text-transform: capitalize;
+}
+.testimonials .testimonials__container .testimonials__card {
+  width: 35vw;
+  height: 17.014vw;
+  border-radius: 10px;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.testimonials .testimonials__container .testimonials__card .testimonials__image {
+  position: absolute;
+  width: 4.722vw;
+  transform: translate(-2.778vw, -2.778vw);
+}
+.testimonials .testimonials__container .testimonials__card .testimonials__information {
+  margin-top: 1.944vw;
+  margin-left: 2.361vw;
+}
+.testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__text {
+  width: 27.917vw;
+  line-height: 2.222vw;
+  margin-bottom: 2.361vw;
+}
+.testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__name {
+  font-weight: 600;
+  font-size: 1.25vw;
+  line-height: 1.875vw;
+  margin-bottom: 0.347vw;
+}
+.testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__location {
+  font-size: 0.972vw;
+  line-height: 1.458vw;
+}
+
+@media (max-width: 767.99px) {
+  .testimonials .testimonials__container {
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+    margin-bottom: 17.874vw;
+  }
+  .testimonials .testimonials__container .testimonials__title-container {
+    width: 69.324vw;
+    margin: 15.217vw 14.251vw 30.918vw 16.184vw;
+    text-align: center;
+  }
+  .testimonials .testimonials__container .testimonials__title-container .testimonials__subtitle {
+    font-size: 4.831vw;
+    line-height: 7.246vw;
+    margin-bottom: 6.522vw;
+  }
+  .testimonials .testimonials__container .testimonials__title-container .testimonials__title {
+    font-size: 9.662vw;
+    line-height: 12.464vw;
+  }
+  .testimonials .testimonials__container .testimonials__card {
+    width: 86.715vw;
+    height: 56.522vw;
+  }
+  .testimonials .testimonials__container .testimonials__card .testimonials__image {
+    width: 16.425vw;
+    transform: translate(35.266vw, -12vw);
+  }
+  .testimonials .testimonials__container .testimonials__card .testimonials__information {
+    margin-top: 5.072vw;
+    margin-left: 2.174vw;
+  }
+  .testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__text {
+    font-size: 3.865vw;
+    width: 85.266vw;
+    line-height: 7.729vw;
+    margin-bottom: 4.831vw;
+  }
+  .testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__name {
+    font-size: 4.348vw;
+    line-height: 6.522vw;
+    text-align: center;
+  }
+  .testimonials .testimonials__container .testimonials__card .testimonials__information .testimonials__location {
+    font-size: 3.382vw;
+    line-height: 5.072vw;
+    text-align: center;
+  }
+}
+.companies .companies__container {
+  display: flex;
+  max-width: 76.389vw;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-bottom: 8.819vw;
+}
+.companies .companies__container .companies__text {
+  display: none;
+}
+.companies .companies__container .companies__item {
+  filter: grayscale(100%);
+}
+.companies .companies__container .companies__item_axon {
+  width: 9.028vw;
+  margin-right: 5.347vw;
+  margin-left: 0.903vw;
+}
+.companies .companies__container .companies__item_jetstar {
+  width: 12.004vw;
+  margin-right: 3.482vw;
+}
+.companies .companies__container .companies__item_expedia {
+  width: 16.736vw;
+  margin-right: 3.264vw;
+  border-radius: 10px;
+  filter: none;
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+}
+.companies .companies__container .companies__item_qantas {
+  width: 11.25vw;
+  margin-right: 6.875vw;
+}
+.companies .companies__container .companies__item_alitalia {
+  width: 6.528vw;
+}
+
+@media (max-width: 767.99px) {
+  .companies .companies__container {
+    flex-direction: column;
+    margin-bottom: 20.186vw;
+  }
+  .companies .companies__container .companies__text {
+    display: block;
+    font-weight: 600;
+    font-size: 4.831vw;
+    line-height: 7.246vw;
+    margin-bottom: 7.659vw;
+    margin-top: 4.106vw;
+  }
+  .companies .companies__container .companies__item {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .companies .companies__container .companies__item_axon {
+    width: 31.401vw;
+  }
+  .companies .companies__container .companies__item_jetstar {
+    width: 41.754vw;
+    margin-bottom: 10.014vw;
+  }
+  .companies .companies__container .companies__item_expedia {
+    width: 58.213vw;
+    margin-bottom: 19.147vw;
+  }
+  .companies .companies__container .companies__item_qantas {
+    width: 39.13vw;
+  }
+  .companies .companies__container .companies__item_alitalia {
+    display: none;
+  }
+}
+.subscribe .subscribe__container {
+  background-image: url(../../img/subscribe-bg.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 81.25vw;
+  height: 28.264vw;
+  position: relative;
+  margin-bottom: 11.528vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe .subscribe__container .subscribe__icon {
+  background-image: url(../../img/subscribe-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 4.861vw;
+  height: 4.861vw;
+  position: absolute;
+  top: -3%;
+  right: -1.5%;
+}
+.subscribe .subscribe__container .subscribe__information {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.subscribe .subscribe__container .subscribe__information .subscribe__text {
+  font-weight: 600;
+  font-size: 2.292vw;
+  line-height: 3.75vw;
+  color: #5E6282;
+  width: 59.653vw;
+  text-align: center;
+  margin-bottom: 5.139vw;
+}
+.subscribe .subscribe__container .subscribe__information .subscribe__form {
+  text-align: center;
+}
+.subscribe .subscribe__container .subscribe__information .subscribe__form .subscribe__email {
+  width: 29.236vw;
+  height: 4.722vw;
+  border-radius: 10px;
+  margin-right: 2.639vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 0.972vw;
+  text-indent: 1.944vw;
+}
+.subscribe .subscribe__container .subscribe__information .subscribe__form .subscribe__btn {
+  width: 12.5vw;
+  height: 4.722vw;
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  border-radius: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 1.181vw;
+  color: #FFFFFF;
+}
+.subscribe .subscribe__container .subscribe__pluses {
+  background-image: url(../../img/subscribe-pluses.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 10.625vw;
+  height: 11.528vw;
+  position: absolute;
+  top: 75%;
+  right: -8%;
+}
+.subscribe .subscribe__mobile-view {
+  display: none;
+}
+
+@media (max-width: 767.99px) {
+  .subscribe .subscribe__container {
+    display: none;
+  }
+  .subscribe .subscribe__mobile-view {
+    display: flex;
+    margin-bottom: 14.01vw;
+  }
+  .subscribe .subscribe__mobile-view .subscribe__mobile-btn {
+    display: block;
+    width: 37.44vw;
+    height: 13.527vw;
+    font-size: 4.106vw;
+    margin-right: 6.039vw;
+    margin-left: 33.333vw;
+    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+  }
+  .subscribe .subscribe__mobile-view .subscribe__mobile-icon {
+    display: block;
+    width: 14.734vw;
+    height: 13.527vw;
+    background-image: url(../../img/subscribe-icon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+.footer .footer__container {
+  display: flex;
+  max-width: 76.389vw;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footer .footer__summary {
+  width: 14.375vw;
+}
+.footer .footer__summary .footer__summary-logo {
+  font-size: 3.056vw;
+  color: #181E4B;
+  margin-bottom: 1.319vw;
+  line-height: 4.583vw;
+}
+.footer .footer__summary .footer__summary-text {
+  font-size: 0.903vw;
+  line-height: 1.124vw;
+  color: #5E6282;
+}
+.footer .footer__menu {
+  display: flex;
+  justify-content: space-between;
+  width: 32.917vw;
+}
+.footer .footer__menu .footer__menu-list .footer__menu-item .footer__menu-title {
+  font-weight: 700;
+  font-size: 1.458vw;
+  color: #080809;
+  display: block;
+  margin-bottom: 2.361vw;
+}
+.footer .footer__menu .footer__menu-list .footer__menu-item .footer__menu-link {
+  font-size: 1.25vw;
+  color: #5E6282;
+  display: block;
+  margin-bottom: 0.903vw;
+}
+.footer .footer__icons .footer__social-media {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.431vw;
+}
+.footer .footer__icons .footer__social-media .footer__social-media-item {
+  width: 1.667vw;
+  margin-right: 1.389vw;
+}
+.footer .footer__icons .footer__app-text {
+  font-size: 1.389vw;
+  margin-bottom: 1.111vw;
+  color: #5E6282;
+}
+.footer .footer__icons .footer__app-stores .footer__app-stores-item {
+  height: 2.431vw;
+}
+.footer .footer__icons .footer__app-stores .footer__app-stores-item_google-play {
+  margin-right: 0.486vw;
+}
+.footer .footer__rights {
+  font-size: 0.972vw;
+  text-align: center;
+  margin-top: 4.931vw;
+  padding-bottom: 1.875vw;
+  color: #5E6282;
+}
+
+@media (max-width: 767.99px) {
+  .footer {
+    background-color: #FFF1DA;
+  }
+  .footer .footer__container {
+    flex-direction: column;
+    max-width: 62.319vw;
+  }
+  .footer .footer__summary {
+    width: 50vw;
+  }
+  .footer .footer__summary .footer__summary-logo {
+    font-size: 10.628vw;
+    margin-top: 3.14vw;
+    margin-bottom: 4.589vw;
+    line-height: 15.942vw;
+  }
+  .footer .footer__summary .footer__summary-text {
+    font-size: 3.14vw;
+    line-height: 3.911vw;
+    margin-bottom: 14.01vw;
+  }
+  .footer .footer__menu {
+    flex-direction: column;
+  }
+  .footer .footer__menu .footer__menu-list {
+    margin-bottom: 10.87vw;
+  }
+  .footer .footer__menu .footer__menu-list .footer__menu-item .footer__menu-title {
+    font-size: 5.072vw;
+    margin-bottom: 8.213vw;
+  }
+  .footer .footer__menu .footer__menu-list .footer__menu-item .footer__menu-link {
+    font-size: 4.348vw;
+    margin-bottom: 3.14vw;
+  }
+  .footer .footer__icons {
+    align-self: center;
+  }
+  .footer .footer__icons .footer__social-media {
+    width: 37.681vw;
+    margin: 0 auto 9.903vw;
+  }
+  .footer .footer__icons .footer__social-media .footer__social-media-item {
+    width: 5.797vw;
+    margin: 0 2.415vw;
+  }
+  .footer .footer__icons .footer__app-text {
+    font-size: 4.831vw;
+    margin-bottom: 3.865vw;
+  }
+  .footer .footer__icons .footer__app-stores .footer__app-stores-item {
+    height: 8.454vw;
+  }
+  .footer .footer__icons .footer__app-stores .footer__app-stores-item_google-play {
+    margin-right: 1.691vw;
+  }
+  .footer .footer__rights {
+    font-size: 3.382vw;
+    margin-top: 14.01vw;
+    padding-bottom: 6.522vw;
+  }
+}/*# sourceMappingURL=main.css.map */

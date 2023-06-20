@@ -1,0 +1,111 @@
+.subscribe {
+    .subscribe__container {
+        background-image: url(../../img/subscribe-bg.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 81.25vw;
+        height: 28.264vw;
+        position: relative; 
+        margin-bottom: 11.528vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        .subscribe__icon {
+            background-image: url(../../img/subscribe-icon.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 4.861vw;
+            height: 4.861vw;
+            position: absolute;
+            top: -3%;
+            right: -1.5%;
+        }
+        .subscribe__information{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .subscribe__text {
+                font-weight: 600;
+                font-size: 2.292vw;
+                line-height: 3.75vw;
+                color: #5E6282;
+                width: 59.653vw;
+                text-align: center;
+                margin-bottom: 5.139vw;
+            }
+            .subscribe__form {
+                text-align: center;
+
+                .subscribe__email {
+                    width: 29.236vw;
+                    height: 4.722vw;
+                    border-radius: 10px;
+                    margin-right: 2.639vw;
+                    font-family: 'Montserrat', sans-serif;
+                    font-weight: 400;
+                    font-size: 0.972vw;
+                    text-indent: 1.944vw;
+                }
+                .subscribe__btn {
+                    width: 12.5vw;
+                    height: 4.722vw;
+                    background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+                    border-radius: 10px;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 600;
+                    font-size: 1.181vw;
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .subscribe__pluses {
+            background-image: url(../../img/subscribe-pluses.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 10.625vw;
+            height: 11.528vw;
+            position: absolute;
+            top: 75%;
+            right: -8%;
+        }
+    }
+    .subscribe__mobile-view {
+        display: none;
+    }
+}
+
+@media (max-width: $max-width){
+    .subscribe {
+        .subscribe__container {
+            display: none;
+        }
+        .subscribe__mobile-view {
+            display: flex;
+            margin-bottom: 14.01vw;
+
+            .subscribe__mobile-btn {
+                display: block;
+                width: 37.44vw;
+                height: 13.527vw;
+                font-size: 4.106vw;
+                margin-right: 6.039vw;
+                margin-left: 33.333vw;
+                background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+                border-radius: 10px;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: #FFFFFF;
+            }
+            .subscribe__mobile-icon {
+                display: block;
+                width: 14.734vw;
+                height: 13.527vw;
+                background-image: url(../../img/subscribe-icon.svg);
+                background-repeat: no-repeat;
+                background-size: contain;  
+            }
+        }  
+    }
+}

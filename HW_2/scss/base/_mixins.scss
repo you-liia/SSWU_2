@@ -1,0 +1,27 @@
+@mixin subtitle {
+    font-weight: 600;
+    font-size: 1.25vw;
+    line-height: 1.875vw;
+}
+@mixin subtitle-mobile {
+    font-size: 4.831vw;
+    line-height: 7.246vw;
+}
+@mixin title {
+	color: #14183E;
+    font-family: 'Volkhov', sans-serif;
+    font-weight: 700;
+    font-size: 3.472vw;
+    line-height: 4.479vw;
+    text-transform: capitalize;
+}
+@mixin title-mobile {
+	font-size: 9.662vw;
+    line-height: 12.464vw;
+}
+@mixin container {
+    display: flex;
+    max-width: 76.389vw;
+    margin-left: auto;
+    margin-right: auto;
+}

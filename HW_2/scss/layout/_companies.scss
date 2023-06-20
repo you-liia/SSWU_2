@@ -1,0 +1,76 @@
+.companies {
+    .companies__container {
+        @include container;
+        align-items: center;
+        margin-bottom: 8.819vw;
+
+        .companies__text{
+            display: none;
+        }
+        .companies__item { 
+            filter: grayscale(100%);
+        }
+        .companies__item_axon {
+            width: 9.028vw;
+            margin-right: 5.347vw;
+            margin-left: 0.903vw;
+        }
+        .companies__item_jetstar {
+            width: 12.004vw;
+            margin-right: 3.482vw;
+        }
+        .companies__item_expedia {
+            width: 16.736vw;
+            margin-right: 3.264vw;
+            border-radius: 10px;
+            filter: none;
+            box-shadow: $box-shadow;
+        }
+        .companies__item_qantas {
+            width: 11.25vw;
+            margin-right: 6.875vw;
+        }
+        .companies__item_alitalia {
+            width: 6.528vw;
+        }
+    }  
+}
+
+@media (max-width: $max-width){
+    .companies {
+        .companies__container {
+            flex-direction: column;
+            margin-bottom: 20.186vw;
+
+            .companies__text {
+                display: block;
+                font-weight: 600;
+                font-size: 4.831vw;
+                line-height: 7.246vw;
+                margin-bottom: 7.659vw;
+                margin-top: 4.106vw;
+            }
+            .companies__item {
+                margin-right: 0;
+                margin-left: 0;
+            }
+            .companies__item_axon {
+                width: 31.401vw;
+            }
+            .companies__item_jetstar {
+                width: 41.754vw;
+                margin-bottom: 10.014vw;
+            }
+            .companies__item_expedia {
+                width: 58.213vw;
+                margin-bottom: 19.147vw;
+            }
+            .companies__item_qantas {
+                width: 39.13vw;
+            }
+            .companies__item_alitalia {
+                display: none;
+            }
+        }
+    }
+}
